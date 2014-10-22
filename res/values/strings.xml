@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tu Deuda</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign out</string>
+    <string name="agregarDeuda">Agregar Deuda</string>
+    <string name="agregarDeudor">Agregar Deudor</string>
+    <string name="none"></string>
+    <string name="fecha">Fecha:</string>
+    <string name="descripcion">Descripcion:</string>
+    <string name="deudor">Deudor:</string>
+    <string name="deuda">Deuda:</string>
+    <string name="moneda">Moneda:</string>
+    <string name="telefono">Telefono Deudor:</string>
+    <string name="quetzales">Q</string>
+    <string name="dolar">$</string>
+    <string name="saveDeudor">Guardar deudor como nuevo contacto</string>
+    <string name="tab_deudas">Deudas</string>
+    <string name="tab_deudores">Deudores</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="buscar">Buscar</string>
+
+</resources>

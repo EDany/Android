@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/fecha"/>
+		        
+		        <TextView
+		            android:id="@+id/dateAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:text="@string/none"/>
+		            
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/descripcion"/>
+		        
+		        <EditText 
+		            android:id="@+id/descriptionAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:hint="@string/none"
+		            android:inputType="textMultiLine"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:id="@+id/lblPorPagar"
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/deudor"/>
+		        
+		        <!-- <EditText 
+		            android:id="@+id/deudorAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:hint="@string/none"
+		            android:inputType="textPersonName"/> -->
+		        
+		        <AutoCompleteTextView
+		            android:id="@+id/deudorAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:hint="@string/none"
+		            android:inputType="textPersonName"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/telefono"/>
+		        
+		        <EditText 
+		            android:id="@+id/telefonoAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:enabled="false"
+		            android:hint="@string/none"
+		            android:inputType="phone"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/moneda"/>
+		
+		        <!-- <Switch
+		            android:id="@+id/monedaAdd"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:gravity="center_horizontal"
+		            android:textOff="@string/dolar"
+		            android:textOn="@string/quetzales" /> -->
+		        
+		        <ToggleButton
+		            android:id="@+id/monedaAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:textOn="@string/quetzales"
+		            android:textOff="@string/dolar"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		        <TextView 
+		            android:layout_width="0dp"
+		            android:layout_weight=".6"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="@string/deuda"/>
+		        
+		        <EditText 
+		            android:id="@+id/deudaAdd"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:hint="@string/none"
+		            android:inputType="number"/>
+		        
+		    </LinearLayout>
+	    
+	    </LinearLayout>
+    
+    </ScrollView>
+    
+    <CheckBox
+        android:id="@+id/deudorAddedSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="@string/saveDeudor"/>
+
+</LinearLayout>
